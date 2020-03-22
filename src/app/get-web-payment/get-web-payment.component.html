@@ -1,0 +1,21 @@
+<div class="card mt-4">
+  <h4 class="card-header">get web payment</h4>
+  <div class="card-body">
+
+
+    <form [formGroup]="formData" (ngSubmit)="getpayment()">
+
+      <div class="form-group form-float">
+        <div class="form-line">
+          <input type="text" class="form-control" name="token"
+                 formControlName="token" placeholder="token">
+        </div>
+      </div>
+      <input type="submit">
+    </form>
+
+    {{dataHTML.result.longMessage}}
+
+
+  </div>
+</div>
